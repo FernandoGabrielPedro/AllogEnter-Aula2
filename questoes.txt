@@ -1,0 +1,368 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Questão 1
+            /*
+            double cotacaoDolar = 0;
+            double valorDolares = 0;
+            double valorReais;
+
+            bool esperandoValor = true;
+            while (esperandoValor)
+            {
+                Console.WriteLine("Insira a cotação atual do dólar:");
+                try
+                {
+                    cotacaoDolar = Convert.ToDouble(Console.ReadLine().Replace('.', ','));
+                    esperandoValor = false;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Valor inválido.");
+                }
+            }
+
+            esperandoValor = true;
+            while (esperandoValor) {
+                Console.WriteLine("Insira um valor em dólares:");
+                try
+                {
+                    valorDolares = Convert.ToDouble(Console.ReadLine().Replace('.', ','));
+                    esperandoValor = false;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Valor inválido.");
+                }
+            }
+
+            valorReais = valorDolares * cotacaoDolar;
+            Console.WriteLine("O valor inserido equivale a R$" + Convert.ToString(valorReais));
+            Console.Read();
+            //*/
+
+
+
+
+            //Questão 2
+            /*
+            //F = (9 * C + 160)/5
+            double tempC = 0;
+            double tempF;
+
+            bool esperandoValor = true;
+            while (esperandoValor) {
+                Console.WriteLine("Insira uma temperatura em graus Celsius (Cº):");
+                try {
+                    tempC = Convert.ToDouble(Console.ReadLine().Replace('.',','));
+                    esperandoValor = false;
+                } catch (Exception e)
+                {
+                    Console.WriteLine("Valor inválido.");
+                }
+            }
+
+            tempF = (9 * tempC + 160) / 5;
+            Console.WriteLine("A temperatura inserida equivale a " + tempF + " graus Fahrenheit (Fº)");
+            Console.Read();
+            //*/
+
+
+
+
+            //Questão 3
+            /*
+            //IMC = Peso/Altura²
+            double peso = 0;
+            double altura = 0;
+            double imc;
+
+            bool esperandoValor = true;
+            while(esperandoValor) {
+                Console.WriteLine("Insira o seu peso, em Kg:");
+                try {
+                    peso = Convert.ToDouble(Console.ReadLine().Replace('.',','));
+                    esperandoValor = false;
+                } catch (Exception e) {
+                    Console.WriteLine("Valor inválido.");
+                }
+            }
+
+            esperandoValor = true;
+            while (esperandoValor)
+            {
+                Console.WriteLine("Insira a sua altura, em metros:");
+                try
+                {
+                    altura = Convert.ToDouble(Console.ReadLine().Replace('.', ','));
+                    esperandoValor = false;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Valor inválido.");
+                }
+            }
+
+            imc = peso / (altura * altura);
+            Console.WriteLine("O resultado do seu fator IMC é de: " + Convert.ToString(imc).Replace('.',','));
+            Console.Write("A sua classificação de obesidade é ");
+            if (imc < 18.5)
+                Console.Write("Grau 0: MAGREZA");
+            else if (imc < 24.9)
+                Console.Write("Grau 0: NORMAL");
+            else if (imc < 29.9)
+                Console.Write("Grau 1: SOBREPESO");
+            else if (imc < 39.9)
+                Console.Write("Grau 2: OBESIDADE");
+            else
+                Console.Write("Grau 3: OBESIDADE GRAVE");
+
+            Console.Read();
+            //*/
+
+
+
+
+            //Questão 4
+            /*
+            double tempo = 0;
+            double velocidadeMedia = 0;
+            double distancia;
+            double litrosGastos;
+
+            Console.WriteLine("Você realizou uma viagem. O carro utilizado gasta 12 litros de combustível por Km percorrido.");
+
+            bool esperandoValor = true;
+            while (esperandoValor)
+            {
+                Console.WriteLine("Insira o tempo gasto, em horas:");
+                try
+                {
+                    tempo = Convert.ToDouble(Console.ReadLine().Replace('.', ','));
+                    esperandoValor = false;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Valor inválido.");
+                }
+            }
+
+            esperandoValor = true;
+            while (esperandoValor)
+            {
+                Console.WriteLine("Insira a velocidade média, em Km/h, do veículo durante a viagem:");
+                try
+                {
+                    velocidadeMedia = Convert.ToDouble(Console.ReadLine().Replace('.', ','));
+                    esperandoValor = false;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Valor inválido.");
+                }
+            }
+
+            distancia = tempo * velocidadeMedia;
+            litrosGastos = distancia / 12;
+
+            Console.WriteLine("TEMPO DA VIAGEM (em horas): \t" + Convert.ToString(tempo).Replace('.', ','));
+            Console.WriteLine("VELOCIDADE MÉDIA DO VEÍCULO (em Km/h): \t" + Convert.ToString(velocidadeMedia).Replace('.', ','));
+            Console.WriteLine("DISTÂNCIA PERCORRIDA (em Km): \t" + Convert.ToString(distancia).Replace('.', ','));
+            Console.WriteLine("COMBUSTÍVEL GASTO (em litros): \t" + Convert.ToString(litrosGastos).Replace('.', ','));
+
+            Console.Read();
+            //*/
+
+
+
+
+            //Questão 5
+            /*
+            //C = ((F - 32) * 5) / 9
+            double tempF = 0;
+            double tempC;
+            
+            bool esperandoValor = true;
+            while (esperandoValor)
+            {
+                Console.WriteLine("Insira uma temperatura em graus Fahrenheit (Fº):");
+                try
+                {
+                    tempF = Convert.ToDouble(Console.ReadLine().Replace('.', ','));
+                    esperandoValor = false;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Valor inválido.");
+                }
+            }
+
+            tempC = ((tempF - 32) * 5) / 9;
+            Console.WriteLine("A temperatura inserida equivale a " + tempC + " graus Celsius (Cº)");
+
+            Console.Read();
+            //*/
+
+
+
+
+            //Questão 6
+            /*
+            string stringInicial = "";
+            string stringFinal = "";
+
+            Console.WriteLine("Insira uma frase, e iremos substituir todas as letras A pelo símbolo &:");
+            stringInicial = Console.ReadLine();
+
+            foreach(char letra in stringInicial) { 
+                if (letra == 'A' || letra == 'a') {
+                    stringFinal = stringFinal + '&';
+                    continue;
+                }
+                stringFinal = stringFinal + letra;
+            }
+
+            Console.WriteLine("A frase resultante é:");
+            Console.WriteLine("'" + stringFinal + "'");
+
+            Console.Read();
+            //*/
+
+
+
+
+            //Questão 7
+            /*
+            foreach (string nome in args)
+                Console.WriteLine("Olá, meu nome é " + nome + "!");
+            //*/
+
+
+
+
+            //Questão 8
+            /*
+            double salario = 0;
+
+            bool esperandoValor = true;
+            while (esperandoValor)
+            {
+                Console.WriteLine("Insira o seu salário para reajuste:");
+                try
+                {
+                    salario = Convert.ToDouble(Console.ReadLine().Replace('.', ','));
+                    esperandoValor = false;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Valor inválido.");
+                }
+            }
+
+            if (salario < 1850)
+                salario += 320;
+            else
+                salario += 180;
+
+            Console.WriteLine("O seu salário, após reajuste, é de R$" + Convert.ToString(salario).Replace('.', ','));
+
+            Console.Read();
+            //*/
+
+
+
+
+            //Questão 11
+            /*
+            Stack<int> pilhaInt = new Stack<int>();
+            string input;
+
+            Console.WriteLine("Insira uma lista de valores inteiros.\n" +
+                              "Insira a letra 'e' para encerrar a inserção.\n" +
+                              "Inserções inválidas seráo desconsideradas.\n");
+
+            while(true) {
+                input = Console.ReadLine();
+
+                if (input == "e")
+                    break;
+
+                try {
+                    pilhaInt.Push(Convert.ToInt32(input));
+                } catch (Exception e) {
+                    Console.WriteLine("Inserção inválida.");
+                    continue;
+                }
+            }
+            Console.WriteLine("Inserção encerrada.\n");
+
+            foreach (int num in pilhaInt)
+                Console.WriteLine(num);
+
+            if (pilhaInt.Count < 1)
+                Console.WriteLine("Não foi inserido nenhum elemento.");
+
+            Console.Read();
+            //*/
+
+
+
+
+            //Questão 12
+            /*
+            string input = "";
+            double inputDouble = 0;
+            double melhorTempo = -1;
+            int melhorTempoVolta = 0;
+            double tempoMedio = 0;
+
+            Console.WriteLine("Registre os tempos alcançados por um piloto de corrida em cada volta, em segundos.\n" +
+                              "Insira a letra 'e' para encerrar a inserção.\n" +
+                              "Inserções inválidas seráo desconsideradas.\n");
+
+            int voltasPercorridas = 0;
+            while(true) {
+                input = Console.ReadLine().Replace('.', ',');
+
+                if (input == "e")
+                    break;
+
+                try {
+                    inputDouble = Convert.ToDouble(input);
+                    if (inputDouble < 0)
+                        throw new Exception();
+                } catch {
+                    Console.WriteLine("Inserção inválida.");
+                    continue;
+                }
+
+                voltasPercorridas++;
+
+                if (inputDouble > melhorTempo) {
+                    melhorTempo = inputDouble;
+                    melhorTempoVolta = voltasPercorridas;
+                }
+
+                tempoMedio += inputDouble;
+            }
+
+            tempoMedio = tempoMedio / voltasPercorridas;
+
+            Console.WriteLine("VOLTAS PERCORRIDAS:\t" + voltasPercorridas);
+            Console.WriteLine("MELHOR TEMPO:\t" + melhorTempo);
+            Console.WriteLine("MELHOR VOLTA:\t" + melhorTempoVolta);
+            Console.WriteLine("TEMPO MÉDIO:\t" + tempoMedio);
+            Console.Read();
+            //*/
+        }
+    }
+}
